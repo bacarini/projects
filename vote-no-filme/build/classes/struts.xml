@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+ 
+<package name="voto" extends="struts-default">
+	<action name="obterListaVoto" 
+			class="com.bacarini.action.VotoAction" 
+			method="obterListaVoto">
+			
+		<result name="success">/consultas.jsp</result>
+		<result name="error">/error.jsp</result>
+	</action>
+	
+	<action name="obterRanking" 
+			class="com.bacarini.action.VotoAction" 
+			method="obterRanking">
+			
+		<result name="success">/consultas.jsp</result>
+		<result name="error">/error.jsp</result>
+	</action>	
+	
+	<action name="obterVotoPorUsuario" 
+			class="com.bacarini.action.VotoAction" 
+			method="obterVotoPorUsuario">
+			
+		<result name="success">/consultas.jsp</result>
+		<result name="error">/error.jsp</result>
+	</action>	
+	
+</package>
+
+<package name="filme" extends="struts-default">
+	<action name="obterListaFilmes" 
+			class="com.bacarini.action.FilmeAction" 
+			method="obterListaFilmes">
+			
+		<result name="success">/pesquisa.jsp</result>
+		<result name="error">/error.jsp</result>
+	</action>	
+</package>
+
+<package name="usuario" extends="struts-default">
+	<action name="obterListaUsuario" 
+			class="com.bacarini.action.UsuarioAction" 
+			method="obterListaUsuario">
+			
+		<result name="success">/consultas.jsp</result>
+		<result name="error">/error.jsp</result>
+	</action>	
+</package> 
+</struts>
