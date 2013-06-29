@@ -1,0 +1,68 @@
+.header{
+	background-image:url(../imagens/head.png);
+	background-repeat:no-repeat;
+	font-family:sans-serif;
+	font-size:13px;
+	height:180px;
+	width:960px;
+	color:#222;
+	line-height:23px;
+	position:relative;
+	top:0px; left:0px;
+ margin-top: -9px;
+
+}
+.site{width:960px;background-color:white;margin:0 auto}
+.content{width:960px;display: 0 auto;float:left;margin-top: 70px;margin-left: 20px;}
+.menu{position:absolute;
+top:170px;}
+ul#menu {
+	 margin-top: -18px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: -30px;
+	padding-top: 0;
+	list-style: none;
+}
+
+ul#menu li { display: inline; }
+	
+ul#menu li a {
+		width: 876px; 
+	display: block; float: left; height: 45px;
+	background-image: url(../imagens/menu.png); text-indent: -9999px;
+}
+
+	ul#menu li a.usuario {
+		width: 110px; background-position: 0 0;	
+	}
+	
+	ul#menu li a.ranking {
+		width: 151px; background-position: -110px 0;	
+	}
+	
+	ul#menu li a.novapesquisa {
+		width: 210px; background-position: -245px 0;	
+	}
+
+	ul#menu li a.voltar {
+		width: 470px; background-position: -430px 0;	
+	}
+	
+	
+	ul#menu li a.usuario:hover, ul#menu li a.usuario:focus {
+		background-position: 0 -56px;	
+	}
+	
+	ul#menu li a.ranking:hover, ul#menu li a.ranking:focus {
+		background-position: -110px -56px;	
+	}
+	
+	ul#menu li a.novapesquisa:hover, ul#menu li a.novapesquisa:focus {
+		background-position: -250px -56px;	
+	}
+	
+	ul#menu li a.voltar:hover, ul#menu li a.voltar:focus {
+		background-position: -430px -56px;	
+	}
+	

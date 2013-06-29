@@ -8,11 +8,11 @@
 <title>Vote no Filme</title>
 
 </head>
-<body>
+<body><div class="site">
 
 
 <s:include value="/menu.jsp"></s:include>
-
+<div class="content">
 <s:iterator value="listaRetorno">
 	<s:iterator value="listaFilmes">
 	  <p>
@@ -23,5 +23,5 @@
 	</s:iterator>
 </s:iterator>
 
-</body>
+</div></div></body>
 </html>

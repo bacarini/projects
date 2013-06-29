@@ -7,22 +7,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Consultas</title>
 </head>
-<body>
+<body><div class="site">
 <s:include value="/menu.jsp"></s:include>
-
+<div class="content">
 <s:iterator value="listaRetorno">
 <table>
 	<s:if test="%{tipoListaRetorno=='listaUsuario'}">
 		<s:iterator value="listaUsuario">
-		
 		<tr>
-			
-				<td><a href="/vote-no-filme/obterVotoPorUsuario?idUsuario=<s:property value="idUsuario"/>">
-					<s:property value="nomeUsuario" />
-					</a>
-				</td>
-				<td><s:property value="email" /></td>
-			
+			<td><a href="/vote-no-filme/obterVotoPorUsuario?idUsuario=<s:property value="idUsuario" />" title="Clique aqui para ver o filme que este usuário votou!">
+				<s:property value="nomeUsuario" />
+				</a>
+			</td>
+			<td><s:property value="email" /></td>
 		</tr>
 		</s:iterator>
 	</s:if>
@@ -52,5 +49,5 @@
 	</s:elseif>
 </table>
 </s:iterator>
-</body>
+</div></div></body>
 </html>
