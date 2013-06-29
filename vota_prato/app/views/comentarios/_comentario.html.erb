@@ -1,0 +1,15 @@
+<div id="comentario_<%= comentario.id %>">
+	<%= comentario.conteudo %>
+	<%= link_to image_tag("delete.png"), comentario , 
+		:remote => true , 
+		:method => :delete,
+		:id => "remove_comentario_#{comentario.id}" %>
+</div>
+<%=content_for :js do%>
+  $('#remove_comentario_<%=comentario.id%>').bind('ajax:success',
+        function(xhr,result){
+          $('#comentario_<%=comentario.id%>').remove();
+        }
+	);
+<%end%>
+
